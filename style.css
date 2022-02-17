@@ -857,6 +857,8 @@ p {
 
 /**** Utilities ****/
 
+/**** Site Styles ****/
+
 /* Foto y div */
 .foto-area {
   width: 100%;
@@ -870,7 +872,7 @@ p {
   height: 40vh;
 }
 
-.foto-area div {
+.foto-area-firstdiv {
   position: absolute;
   left: 8px;
   top: 8px;
@@ -886,6 +888,7 @@ p {
 }
 
 .secondary-news {
+  position: relative;
   background-color: white;
   max-width: 768px;
   margin-left: auto;
@@ -893,7 +896,46 @@ p {
   margin-top: 1rem;
 }
 
+.secondary-news-1,
+.secondary-news-2 {
+}
+
 .secondary-news-container {
   margin-top: 1rem;
 }
-/**** Site Styles ****/
+
+/* Social media en la foto mobile */
+
+.social-media-foto-mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-foto-mobile svg {
+  width: 40px;
+  height: 40px;
+  padding: 0.5rem;
+  fill: #ffffff;
+}
+
+.social-media-foto-mobile :nth-child(1) {
+  background-color: rgb(245, 119, 2);
+}
+.social-media-foto-mobile :nth-child(2) {
+  background-color: rgb(0, 0, 160);
+}
+.social-media-foto-mobile :nth-child(3) {
+  background-color: rgb(1, 202, 252);
+}
+.social-media-foto-mobile :nth-child(4) {
+  background-color: rgb(0, 88, 0);
+}
+
+@media screen and (min-width: 768px) {
+  .social-media-foto-mobile {
+    display: none;
+  }
+}
