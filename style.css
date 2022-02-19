@@ -855,6 +855,77 @@ p {
   }
 }
 
+/* Cell publicidad 2 */
+
+.cell-advertising-2 {
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+  border-bottom: thin solid var(--second-color);
+  padding-bottom: 1rem;
+}
+
+.cell-advertising-2 a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.cell-advertising-2-container {
+  width: 90%;
+  height: 60vh;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+    30deg,
+    rgba(108, 221, 16, 0.705) 50%,
+    rgb(2, 255, 108)
+  );
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 1.4rem;
+  align-items: center;
+  grid-template-areas:
+    "img text"
+    "img text"
+    "img text";
+  overflow: hidden;
+}
+
+.cell-advertising-2-container img {
+  display: inline-block;
+  height: 90%;
+  margin-left: 1rem;
+  grid-area: img;
+}
+.advertising-2-text {
+  display: inline-block;
+  height: 85%;
+  margin-right: 10%;
+  grid-area: text;
+}
+
+.advertising-2-text p {
+  min-width: 125px;
+  font-size: clamp(1.2rem, 0.8rem + 2vw, 2.5rem);
+  font-weight: bold;
+}
+.advertising-2-text :nth-child(1) {
+  color: white;
+  font-size: clamp(1.2rem, 0.8rem + 2.2vw, 2.5rem);
+}
+.advertising-2-text :nth-child(2) {
+  color: black;
+}
+.advertising-2-text :nth-child(3) {
+  width: fit-content;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 1rem;
+  color: black;
+  background-color: white;
+  letter-spacing: 0.8vw;
+}
+
 /**** Utilities ****/
 
 /**** Site Styles ****/
@@ -883,6 +954,7 @@ p {
 
 .secundary-news-container h2 {
   margin-left: 1rem;
+  margin-right: 1rem;
   text-align: left;
   font-size: 32px;
 }
@@ -894,10 +966,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
-}
-
-.secondary-news-1,
-.secondary-news-2 {
+  border-bottom: thin solid var(--second-color);
 }
 
 .secondary-news-container {
