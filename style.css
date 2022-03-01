@@ -1171,16 +1171,16 @@ p {
   fill: #ffffff;
 }
 
-.social-media-foto-mobile :nth-child(1) {
+.soc-med-fm-comp {
   background-color: rgb(245, 119, 2);
 }
-.social-media-foto-mobile :nth-child(2) {
+.soc-med-fm-face {
   background-color: var(--facebook-color);
 }
-.social-media-foto-mobile :nth-child(3) {
+.soc-med-fm-tt {
   background-color: var(--twitter-color);
 }
-.social-media-foto-mobile :nth-child(4) {
+.soc-med-fm-wsp {
   background-color: var(--wsp-color);
 }
 
