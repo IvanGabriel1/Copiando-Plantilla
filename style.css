@@ -945,7 +945,7 @@ p {
   height: 40vh;
   background-color: var(--first-color);
   font-family: var(--font-titles);
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 
 .cell-advertising-3 a {
