@@ -6,9 +6,9 @@
   --first-alpha50-color: rgba(146, 206, 34, 0.5);
   --first-alpha25-color: rgba(146, 206, 34, 0.25);
   --second-color: rgb(245, 245, 245);
-  --third-color: #faff00;
-  --third-alpha75-color: rgba(250, 255, 0, 0.75);
-  --third-alpha25-color: rgba(250, 255, 0, 0.25);
+  --third-color: rgba(252, 136, 1, 1);
+  --third-alpha75-color: rgba(252, 136, 1, 0.75);
+  --third-alpha25-color: rgba(252, 136, 1, 0.25);
   --wsp-color: rgb(1, 192, 1);
   --twitter-color: rgb(1, 202, 252);
   --facebook-color: rgb(0, 0, 160);
@@ -871,8 +871,9 @@ p {
 /* Cell publicidad 2 */
 
 .cell-advertising-2 {
-  margin-top: 1rem;
+  margin: 1rem auto 0 auto;
   width: 100%;
+  max-width: 768px;
   height: auto;
   border-bottom: thin solid var(--second-color);
   padding-bottom: 1rem;
@@ -1027,13 +1028,161 @@ p {
   white-space: nowrap;
 }
 
+/* Most read */
+
+.the-most-read-container {
+  width: 100%;
+  max-width: 768px;
+  margin: 0.25rem auto 0 auto;
+  padding: 0 1rem 0 1rem;
+  border-top: thick solid black;
+  border-bottom: thick solid black;
+}
+
+.the-most-read-container h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-size: clamp(0.7rem, 0.5rem + 2vw, 1.5rem);
+  font-weight: 500;
+}
+
+.read-sections {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.the-most-read {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.the-most-read a {
+  text-decoration: none;
+  color: black;
+}
+
+.most-read-img {
+  width: 250px;
+  height: 130px;
+  background-image: url(assets/copa-argentina-como-sigue.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.most-read-img-span {
+  position: absolute;
+  left: 10px;
+  bottom: 1rem;
+  color: white;
+  font-size: 4rem;
+  font-family: var(--font-titles);
+}
+
+.most-read-written {
+  width: 250px;
+  height: 130px;
+}
+
+.most-read-written-bg {
+  background-color: var(--third-color);
+  width: 100%;
+  height: 130px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.most-read-span {
+  font-weight: 400;
+  font-size: 0.7rem;
+  margin-left: 0.8rem;
+}
+
+.most-read-written h4 {
+  margin-left: 0.8rem;
+  font-family: var(--font-titles);
+}
+
+.most-read-icon {
+  position: absolute;
+  margin-left: 0.8rem;
+  bottom: 8px;
+  font-size: 0.75rem;
+}
+
+.most-none-a {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .most-none-a {
+    display: block;
+  }
+
+  .the-most-read-1,
+  .the-most-read-2,
+  .the-most-read-3,
+  .the-most-read-4,
+  .the-most-read-5 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .the-most-read-1,
+  .the-most-read-2,
+  .the-most-read-3,
+  .the-most-read-4 {
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+    border-bottom: thin solid var(--second-color);
+  }
+
+  .read-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .the-most-read-container a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .most-read-written {
+    width: 100%;
+  }
+
+  .most-read-written-bg-1 {
+    width: 100%;
+  }
+  .most-read-written-bg-2 {
+    width: 76.5%;
+  }
+  .most-read-written-bg-3 {
+    width: 66.5%;
+  }
+  .most-read-written-bg-4 {
+    width: 52%;
+  }
+  .most-read-written-bg-5 {
+    width: 36%;
+  }
+}
+
 /* Tapa */
 
 .la-tapa {
   width: 100%;
   max-width: 768px;
   margin: 0.5rem auto 0 auto;
-
   border-bottom: thick solid black;
 }
 
