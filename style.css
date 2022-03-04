@@ -921,12 +921,12 @@ p {
 
 .advertising-2-text p {
   min-width: 125px;
-  font-size: clamp(1.2rem, 0.8rem + 2vw, 2.5rem);
+  font-size: clamp(1.2rem, 0.8rem + 2vw, 1.8rem);
   font-weight: bold;
 }
 .advertising-2-text :nth-child(1) {
   color: white;
-  font-size: clamp(1.2rem, 0.8rem + 2.2vw, 2.5rem);
+  font-size: clamp(1.2rem, 0.8rem + 2.2vw, 1.8rem);
 }
 .advertising-2-text :nth-child(2) {
   color: black;
