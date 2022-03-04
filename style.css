@@ -1039,6 +1039,12 @@ p {
   border-bottom: thick solid black;
 }
 
+.the-most-read-container a {
+  text-decoration: none;
+  color: black;
+  min-width: 130px;
+}
+
 .the-most-read-container h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1066,7 +1072,8 @@ p {
 }
 
 .most-read-img {
-  width: 250px;
+  width: 35vw;
+  max-width: 250px;
   height: 130px;
   background-image: url(assets/copa-argentina-como-sigue.jpg);
   background-size: cover;
@@ -1085,7 +1092,8 @@ p {
 }
 
 .most-read-written {
-  width: 250px;
+  width: 35vw;
+  max-width: 250px;
   height: 130px;
 }
 
@@ -1095,9 +1103,6 @@ p {
   height: 130px;
   display: block;
   position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .most-read-span {
@@ -1108,7 +1113,10 @@ p {
 
 .most-read-written h4 {
   margin-left: 0.8rem;
+  margin-right: 0.4rem;
   font-family: var(--font-titles);
+  max-height: 72px;
+  overflow: hidden;
 }
 
 .most-read-icon {
@@ -1136,15 +1144,6 @@ p {
     flex-direction: row;
   }
 
-  .the-most-read-1,
-  .the-most-read-2,
-  .the-most-read-3,
-  .the-most-read-4 {
-    margin-bottom: 0.4rem;
-    margin-top: 0.4rem;
-    border-bottom: thin solid var(--second-color);
-  }
-
   .read-sections {
     display: flex;
     flex-direction: column;
@@ -1154,26 +1153,38 @@ p {
   .the-most-read-container a {
     text-decoration: none;
     color: black;
+    pointer-events: none;
+  }
+
+  .most-read-img {
+    width: 250px;
+    pointer-events: visible;
   }
 
   .most-read-written {
+    max-width: 1000px;
     width: 100%;
   }
 
   .most-read-written-bg-1 {
     width: 100%;
+    pointer-events: visible;
   }
   .most-read-written-bg-2 {
     width: 76.5%;
+    pointer-events: visible;
   }
   .most-read-written-bg-3 {
     width: 66.5%;
+    pointer-events: visible;
   }
   .most-read-written-bg-4 {
     width: 52%;
+    pointer-events: visible;
   }
   .most-read-written-bg-5 {
     width: 36%;
+    pointer-events: visible;
   }
 }
 
