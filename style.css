@@ -1028,6 +1028,125 @@ p {
   white-space: nowrap;
 }
 
+/* Cell publi Gran DT */
+
+.advertising-grandt-container {
+  width: 85%;
+  max-width: 550px;
+  height: 45vh;
+  margin: 0.5rem auto 0.5rem auto;
+  position: relative;
+  background-image: linear-gradient(
+    140deg,
+    rgb(64, 54, 201) 50%,
+    rgb(150, 0, 163)
+  );
+}
+
+.advertising-grandt-a {
+  text-decoration: none;
+  color: white;
+}
+/* Gran DtBeginning */
+
+.advertising-grandt-beginning {
+  width: 100%;
+  height: 100%;
+  display: none; /* DISPLAY NONE!!!!!!!!!!!1  */
+}
+
+.span-grandt-beginning {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grandt-podesganar {
+  font-size: clamp(0.9rem, 0.9rem + 2vw, 1.5rem);
+  font-family: var(--font-titles);
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.grandt-150000 {
+  margin: 0;
+  background-color: var(--third-color);
+  font-size: clamp(2rem, 2rem + 6vw, 5rem);
+  font-family: var(--font-titles);
+  font-weight: bold;
+}
+
+.grandt-cadafecha {
+  margin: 0;
+  font-size: clamp(0.9rem, 0.9rem + 2vw, 1.5rem);
+  font-family: var(--font-titles);
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+/* Gran DtFinal */
+.advertising-grandt-final {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advertising-grandt-final svg {
+  width: 120px;
+  height: 130px;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.advertising-grandt-final a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grandt-div-final-text {
+  background-color: var(--third-color);
+  width: 70vw;
+  max-width: 500px;
+  height: 70px;
+  border-bottom: solid medium white;
+  display: flex;
+  flex-direction: column;
+}
+
+.grandt-armaya {
+  font-size: clamp(0.7rem, 0.7rem + 1.25vw, 1.5rem);
+  margin: 1rem auto 0 auto;
+  text-align: center;
+  font-weight: bold;
+  line-height: 0.5rem;
+}
+
+.grandt-tuequipo {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-weight: bold;
+  font-size: clamp(1rem, 0.8rem + 4vw, 2.5rem);
+  line-height: 0.8rem;
+  color: rgb(52, 1, 94);
+}
+
 /* Most read */
 
 .the-most-read-container {
