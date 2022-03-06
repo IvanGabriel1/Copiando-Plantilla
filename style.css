@@ -1,7 +1,7 @@
 /**** Custom Properties ****/
 
 :root {
-  --first-color: rgba(146, 206, 34, 1);
+  --first-color: hsl(81, 72%, 47%);
   --first-alpha75-color: rgba(146, 206, 34, 0.75);
   --first-alpha50-color: rgba(146, 206, 34, 0.5);
   --first-alpha25-color: rgba(146, 206, 34, 0.25);
@@ -1685,6 +1685,68 @@ p {
 
 @media screen and (min-width: 768px) {
 }
+
+/* Return Mobile and Desktop */
+
+.return-mobile {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  position: fixed;
+  bottom: 0.5vh;
+  right: 8px;
+  z-index: 50;
+  background-color: var(--first-alpha50-color);
+  border-radius: 0.9rem;
+}
+
+.return-mobile svg {
+}
+
+.return-desktop {
+  width: 62px;
+  height: 61px;
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  right: 147px;
+  z-index: 50;
+  display: none;
+  background-color: black;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+.return-desktop svg {
+  width: 30px;
+  height: 30px;
+  fill: black;
+  background-color: white;
+  margin: 5px auto 0 auto;
+  display: flex;
+}
+
+.return-desktop p {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+}
+
+.return-desktop svg:hover {
+  background-color: orange;
+}
+
+@media (min-width: 1024px) {
+  .return-mobile {
+    display: none;
+  }
+
+  .return-desktop {
+    display: block;
+  }
+}
+
 /**** Utilities ****/
 
 /**** Site Styles ****/
