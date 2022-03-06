@@ -551,12 +551,9 @@ p {
   margin-right: 1rem;
 }
 
-.header-sus {
-  color: black;
-}
-
 .span-2 {
   margin-right: 1rem;
+  font-size: clamp(0.9rem, 0.4rem + 1vw, 1rem);
 }
 
 .span-1,
@@ -576,12 +573,12 @@ p {
 .header-social-media svg {
   width: 1.5rem;
   height: 1.5rem;
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
 }
 
 .btn-open-header-modal {
   text-decoration: none;
-  margin-left: 1rem;
+  margin-left: 0.7rem;
   display: none;
 }
 
@@ -590,21 +587,21 @@ p {
 }
 
 .statistics-svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.3rem;
+  height: 1.3rem;
   color: var(--white-alpha50-color);
 }
 
 .calendar-svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.3rem;
+  height: 1.3rem;
   color: var(--white-alpha50-color);
 }
 
 .header-ingresar {
   color: black;
   margin-right: 1rem;
-  margin-top: 0.6rem;
+  margin-top: 0.4rem;
 }
 
 .a-menu-big {
@@ -613,12 +610,12 @@ p {
 
 .span-2 > a {
   color: black;
-  margin-right: 1rem;
+  margin-right: 0.7rem;
 }
 
 @media screen and (min-width: 768px) {
   .header {
-    min-width: 860px;
+    min-width: 768px;
   }
 
   .header-social-media {
