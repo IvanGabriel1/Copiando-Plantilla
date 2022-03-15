@@ -270,7 +270,7 @@ p {
 }
 
 .header-modal b {
-  font-size: clamp(0.8rem, 0.8rem + 0.21vw, 1.2rem);
+  font-size: clamp(0.7rem, 0.8rem + 0.21vw, 1.2rem);
 }
 
 .header-modal:target {
@@ -321,6 +321,7 @@ p {
   text-decoration: none;
   font-size: 1rem;
   display: block;
+  white-space: nowrap;
 }
 
 .modal-internal-links a:visited {
@@ -362,7 +363,7 @@ p {
   margin-left: 1rem;
   color: var(--first-color);
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: minmax(200px, 50%);
   column-gap: 0.5rem;
 }
 
@@ -379,9 +380,11 @@ p {
   text-decoration: none;
   color: black;
   display: inline-block;
-  max-width: 250px;
+  max-width: 170px;
   margin-top: 0.5rem;
   overflow: hidden;
+  min-width: 150px;
+  max-height: 22px;
 }
 
 .modal-svg-close {
@@ -505,6 +508,10 @@ p {
     height: 75%;
     background-image: url(assets/foto-madrid.jpg);
     background-size: cover;
+  }
+
+  .modal-second-part-article > h4 {
+    line-height: 1rem;
   }
 
   .title-modal-second-part {
@@ -1711,9 +1718,6 @@ p {
   z-index: 50;
   background-color: var(--first-alpha50-color);
   border-radius: 0.9rem;
-}
-
-.return-mobile svg {
 }
 
 .return-desktop {
