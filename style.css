@@ -247,7 +247,7 @@ p {
   margin-right: 0.1vw;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 64em) {
   .header-fixed {
     display: none;
   }
@@ -265,11 +265,17 @@ p {
   width: 100%;
   pointer-events: none;
   transition: all 1s;
-  display: none;
+  transform: translate(-100%, 0);
+  opacity: 0;
+}
+
+.header-modal b {
+  font-size: clamp(0.8rem, 0.8rem + 0.21vw, 1.2rem);
 }
 
 .header-modal:target {
-  display: block;
+  transform: translate(0, 0);
+  opacity: 1;
   pointer-events: auto;
   background-color: white;
 }
@@ -364,11 +370,15 @@ p {
   grid-column: span 2;
 }
 
+.mobile-none {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .modal-sections a {
   text-decoration: none;
   color: black;
   display: inline-block;
-  font-size: 1rem;
   max-width: 250px;
   margin-top: 0.5rem;
   overflow: hidden;
@@ -384,7 +394,7 @@ p {
   pointer-events: stroke;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   .header-modal:target {
     max-width: 920px;
     margin-left: 100px;
@@ -490,10 +500,11 @@ p {
   }
 
   .img-modal-second-part {
+    position: relative;
     width: 100%;
     height: 75%;
     background-image: url(assets/foto-madrid.jpg);
-    position: relative;
+    background-size: cover;
   }
 
   .title-modal-second-part {
@@ -514,6 +525,11 @@ p {
     position: absolute;
     left: 0;
     top: 0;
+  }
+
+  .mobile-none {
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 
@@ -613,7 +629,7 @@ p {
   margin-right: 0.7rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   .header {
     min-width: 768px;
   }
@@ -652,7 +668,7 @@ p {
     color: white;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .header {
     top: -1px;
   }
@@ -737,9 +753,9 @@ p {
   object-fit: fill;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .superior-publicity {
     margin-top: 1rem;
   }
@@ -859,7 +875,7 @@ p {
   font-size: clamp(0.6rem, 0.4rem + 1.5vw, 1rem);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   .scores-mobile {
     display: none;
   }
@@ -1050,7 +1066,7 @@ p {
   width: 100%;
   height: 100%;
   opacity: 0; /* OPACITY NONE!!!!!!!!!!  */
-  animation: grandt-b 10s ease 0s infinite normal forwards running;
+  animation: grandt-b 10s ease 0s infinite alternate both running;
 }
 
 @keyframes grandt-b {
@@ -1245,7 +1261,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: grandt-f 10s ease 0s infinite normal backwards running;
+  animation: grandt-f 10s ease 0s infinite alternate both running;
 }
 
 @keyframes grandt-f {
@@ -1543,7 +1559,7 @@ p {
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .most-none-a {
     display: block;
   }
@@ -1680,7 +1696,7 @@ p {
   background-color: var(--wsp-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
 }
 
 /* Return Mobile and Desktop */
@@ -1734,7 +1750,7 @@ p {
   background-color: orange;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .return-mobile {
     display: none;
   }
@@ -1747,8 +1763,12 @@ p {
 /**** Utilities ****/
 
 /**** Site Styles ****/
+[id] {
+  scroll-margin-top: 6ex;
+}
 
 /* Foto y div */
+
 .foto-area {
   width: 100%;
   position: relative;
@@ -1821,7 +1841,7 @@ p {
   background-color: var(--wsp-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   .social-media-foto-mobile {
     display: none;
   }
