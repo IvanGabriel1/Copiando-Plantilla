@@ -105,7 +105,7 @@ p {
   width: 100%;
   height: auto;
   border-top: thick solid black;
-  background-color: var(--first-color);
+  background-color: #88b400;
 }
 .footer-social-media {
   width: 90%;
@@ -165,7 +165,7 @@ p {
 .footer-bottom {
   width: 90%;
   margin: 0.5rem auto 1rem auto;
-  background-color: var(--first-color);
+  background-color: #88b400;
 }
 
 .footer-bottom p {
@@ -178,7 +178,7 @@ p {
   display: block;
   width: 100%;
   min-height: 40px;
-  background-color: #639900;
+  background-color: #729b19;
   padding-left: 5vw;
   padding-right: 5vw;
 }
@@ -195,7 +195,7 @@ p {
   display: none;
   width: 180px;
   height: 240px;
-  background-color: var(--first-color);
+  background-color: #88b400;
   padding-left: 3rem;
   border-left: thin solid rgb(118, 165, 31);
 }
