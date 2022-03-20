@@ -718,8 +718,10 @@ p {
 }
 
 .logo-ole {
+  position: relative;
+  top: 2px;
   width: 50px;
-  height: 50px;
+  height: 48px;
   margin-left: 5vw;
 }
 
@@ -747,6 +749,9 @@ p {
 .header-social-media {
   display: none;
 }
+.header-social-media a {
+  text-decoration: none;
+}
 
 .header-social-media svg {
   width: 1.5rem;
@@ -765,14 +770,20 @@ p {
 }
 
 .statistics-svg {
+  position: relative;
+  top: 4px;
   width: 1.3rem;
   height: 1.3rem;
+  margin-right: 2px;
   color: var(--white-alpha50-color);
 }
 
 .calendar-svg {
+  position: relative;
+  top: 4px;
   width: 1.3rem;
   height: 1.3rem;
+  margin-right: 2px;
   color: var(--white-alpha50-color);
 }
 
@@ -784,6 +795,12 @@ p {
 
 .a-menu-big {
   display: none;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.a-menu-big:hover {
+  text-decoration: underline;
 }
 
 .span-2 > a {
@@ -802,7 +819,6 @@ p {
 
   .a-menu-big {
     display: inline;
-    text-decoration: none;
   }
 
   .btn-hamb {
@@ -828,6 +844,10 @@ p {
 
   .header-sus:visited {
     color: white;
+  }
+  .logo-ole {
+    margin-left: 0;
+    margin-right: 50px;
   }
 }
 @media screen and (min-width: 64em) {
