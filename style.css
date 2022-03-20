@@ -1927,6 +1927,15 @@ p {
   scroll-margin-top: 6ex;
 }
 
+.title-news-a-h {
+  text-decoration: none;
+  color: black;
+}
+
+.title-news-a-h:hover {
+  text-decoration: underline;
+}
+
 /* Foto y div */
 
 .foto-area {
