@@ -403,6 +403,10 @@ p {
   margin-right: 0.1vw;
 }
 
+.hf-third-line-svg-container a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 64em) {
   .header-fixed {
     display: none;
@@ -515,6 +519,10 @@ p {
   margin-bottom: 1rem;
 }
 
+.modal-teams-svg a {
+  text-decoration: none;
+}
+
 .modal-sections {
   margin-left: 1rem;
   color: var(--first-color);
@@ -556,6 +564,7 @@ p {
 @media screen and (min-width: 48em) {
   .header-modal:target {
     max-width: 920px;
+    min-height: 670px;
     margin-left: 100px;
     background-color: rgb(245, 245, 245);
     box-shadow: var(--box-shadow3);
@@ -2185,72 +2194,3 @@ p {
     grid-row: 9 / 10;
   }
 }
-/*
-grid-area: "      grid-sup-publi            grid-sup-publi        grid-sup-publi          "
-    "        grid-news-main          grid-news-main       grid-news-main           "
-    "          grid-sup-publi        grid-sup-publi         grid-sup-publi         "
-    "secondary-news-1        .       secondary-news-2  "
-    "secondary-news-3  secondary-news-4  grid-scores"
-    "secondary-news-5  secondary-news-6  grid-adv1"
-    "secondary-news-7  secondary-news-8  la-tapa"
-    "secondary-news-9  secondary-news-10 grid-gdt"
-    "secondary-news-11 secondary-news-12 grid-adv2";
-
-  .grid-sup-publi {
-    grid-area: grid-sup-publi;
-  }
-  .grid-news-main {
-    grid-area: grid-news-main;
-  }
-  .secondary-news-1 {
-    grid-area: secondary-news-1;
-  }
-  .secondary-news-2 {
-    grid-area: secondary-news-2;
-  }
-  .secondary-news-3 {
-    grid-area: secondary-news-3;
-  }
-  .secondary-news-4 {
-    grid-area: secondary-news-4;
-  }
-  .secondary-news-5 {
-    grid-area: secondary-news-5;
-  }
-  .secondary-news-6 {
-    grid-area: secondary-news-6;
-  }
-  .secondary-news-7 {
-    grid-area: secondary-news-7;
-  }
-  .secondary-news-8 {
-    grid-area: secondary-news-8;
-  }
-  .secondary-news-9 {
-    grid-area: secondary-news-9;
-  }
-  .secondary-news-10 {
-    grid-area: secondary-news-10;
-  }
-  .secondary-news-11 {
-    grid-area: secondary-news-11;
-  }
-  .secondary-news-12 {
-    grid-area: secondary-news-12;
-  }
-  .grid-scores {
-    grid-area: grid-scores;
-  }
-  .grid-adv1 {
-    grid-area: grid-adv1;
-  }
-  .grid-adv2 {
-    grid-area: grid-adv2;
-  }
-  .la-tapa {
-    grid-area: la-tapa;
-  }
-  .grid-gdt {
-    grid-area: grid-gdt;
-  }
-*/
